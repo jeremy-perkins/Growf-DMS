@@ -1,0 +1,20 @@
+Oracle Corporation;ORCL;Software Company;139.46;2;135;.04
+Microsoft Corporation;MSFT;Software Company;438.83;.67;400.59;.001
+Canadian West Bank;CWB;Banking Institute;42.26;12;40.06;.03
+NVIDIA Corporation;NVDA;Graphics Cards;125.65;1;65.32;0
+Apple Inc.;AAPL;Technology Company;219.71;3.76;205.32;.0023
+GameStop Corp.;GME;Gaming Resale Company;28.14;23.12;12.64;0
+Tesla, Inc.;TSLA;Automotive Technology Company;179.60;2;165.14;.004
+SoFI Technologies, Inc.;SOFI;Fintech;7.16;16;7.87;.06
+Ford Motor Company;F;Automotive Company;12.09;25;12.0;.035
+Sirius XM Holdings Inc.;SIRI;Radio Entertainment Company;2.6;50;2.55;0
+American Airlines Group Inc.;AAL;Transportation;11.58;10;11.26;.005
+Palantir Technologies Inc.;PLTR;Technology and Security Company;23.76;4;23;.05
+Intel Corporation;INTC;Technology Company;30.51;26.4;28.95;.03
+Rivian Automotive, Inc.;RIVN;Automotive Company;11.95;1;10.5;.02
+Plug Power Inc.;PLUG;Utilities Company;2.93;5;2.75;.0025
+Bank of America Corporation;BAC;Banking Company;39.45;5.26;42.6;.001
+AT&T Inc.;T;Communications Company;17.59;20;18.5;.05
+Amazon.com, Inc.;AMZN;Shopping Technology Company;187.39;5;186.4;.02
+Pfizer Inc.;PFE;Medical Engineering Company;27.66;5;25.42;.002
+Robinhood Markets,Inc.;HOOD;Fintech Company;24.20;3;24.8;0
