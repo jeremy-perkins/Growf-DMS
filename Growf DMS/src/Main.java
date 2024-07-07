@@ -13,6 +13,7 @@
  */
 
 import java.io.FileNotFoundException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -24,15 +25,13 @@ public class Main {
         printMenu();
 
         // Menu operation logic
-        while (userIn != 8) {
-            userIn = scn.nextInt();
-            int i;
-            i = 0;
+        while (true) {
             switch (userIn) {
                 case 1:
                     System.out.println("Running importData()");
                     Command.importData();
 
+                    System.out.println("Stocks added from file.");
                     printMenu();
 
                     userIn = 0;
@@ -75,10 +74,27 @@ public class Main {
                     break;
 
                 case 8:
+                    Command.updateStock();
+
+                    userIn = 0;
+                    break;
+
+                case 9:
                     System.out.println("Exiting program...");
                     System.exit(0);
                     break;
 
+                default: try {
+                    System.out.println("Please enter number.");
+                    userIn = Integer.parseInt(scn.nextLine());
+
+                }
+                catch (Exception e) {
+                    System.out.println(e.getMessage());
+                    System.out.println("Please enter a valid number.");
+                    userIn = Integer.parseInt(scn.nextLine());
+
+                }
             }
         }
     }
@@ -86,7 +102,7 @@ public class Main {
     /*
      This method prints the menu we use to interact with the program. It has no arguments or return value.
      */
-    private static void printMenu() {
+    static void printMenu() {
         System.out.println("-------------------Welcome to the Growf Data Management System--------------------");
         System.out.println("Initial stocks are input by the SampleData.txt file located in this folder.");
         System.out.println("Press the corresponding inputs to navigate the system.");
@@ -98,7 +114,8 @@ public class Main {
         System.out.println("Press 5 to sort all stocks based on the the change in value since purchase.");
         System.out.println("Press 6 to manually add a stock to the system.");
         System.out.println("Press 7 to remove a stock from the system.");
-        System.out.println("Press 8 to exit the program.");
+        System.out.println("Press 8 to update a stock already in the system.");
+        System.out.println("Press 9 to exit the program.");
         System.out.println("----------------------------------------------------------------------------------");
     }
 }

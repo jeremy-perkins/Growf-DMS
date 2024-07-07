@@ -16,10 +16,36 @@ public class Stock {
     double priceChange = currentPrice-purchasePrice;
     Float dividend;
 
+
+    public void setCurrentPrice(double currentPrice) {
+        this.currentPrice = currentPrice;
+    }
+
+    public double getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public void setPurchasePrice(double purchasePrice) {
+        this.purchasePrice = purchasePrice;
+    }
+
+    public double getPurchasePrice() {
+        return purchasePrice;
+    }
+
+    public void setNumbPurchased(double numbPurchased) {
+        this.numbPurchased = numbPurchased;
+    }
+
+    public double getNumbPurchased() {
+        return numbPurchased;
+    }
+
+
     /*
-    This method retrieves the stock name for the comparison operators when sorting and for display.
-    This method has no arguments or return value.
-     */
+        This method retrieves the stock name for the comparison operators when sorting and for display.
+        This method has no arguments or return value.
+         */
     public String getStock() {
         return stock;
     }
@@ -36,9 +62,6 @@ public class Stock {
     This method retrieves the number of a stock owned for the comparison operators when sorting.
     This method has no arguments or return value.
      */
-    public double getNumbPurchased() {
-        return numbPurchased;
-    }
 
     /*
     This method retrieves difference in the purchase and current value for the comparison operators when sorting.
