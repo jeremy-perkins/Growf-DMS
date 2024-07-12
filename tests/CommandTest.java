@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,7 +17,7 @@ class CommandTest {
         double currentPrice = 100, numbPurchased = 5, purchasePrice = 85, priceChange =currentPrice-purchasePrice;
         float dividend = .04F;
 
-        Command.stockList.add(new Stock(stock, ticker, description, currentPrice, numbPurchased, purchasePrice, dividend));
+        Command.stockList.add(new Stock(stock, ticker, description, currentPrice, numbPurchased, purchasePrice, priceChange, dividend));
         assertEquals("Test", Command.stockList.getLast().getStock());
     }
     /*

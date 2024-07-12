@@ -6,8 +6,10 @@
     This is where all the logic of the program is nested. Data is input, sorted, and removed using this class.
  */
 
+import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.sql.*;
 import java.util.*;
 
 
@@ -63,6 +65,7 @@ public class Command {
         String ans = sc.next();
         if (stockList.removeIf(n -> n.ticker.equals(ans.toUpperCase()))){
             System.out.println("Stocklist after removing: " + stockList + "\n");
+
         } else if (Objects.equals(ans, "0")) {
             System.out.println("Returning to main menu.\n");
             Main.printMenu();
@@ -73,6 +76,37 @@ public class Command {
         } else {
             System.out.println("Stock ticker not found, please enter a valid stock ticker.\n");
             removeStock();
+        };
+    }
+    /*
+    Overloaded version of removeStock method using values from JTextField to select ticker to remove
+    */
+    static void removeStock(String ans) throws SQLException {
+        // Database Update
+        String sql = "DELETE FROM GrowfDMS WHERE Ticker = (?)";
+        String sql2 = "DELETE FROM GrowfDMS WHERE Stock = (?)";
+        String url = "jdbc:sqlite:src/GrowfDMS.db";
+        // create a connection to the database
+
+
+        if (stockList.removeIf(n -> n.ticker.equals(ans.toUpperCase()))){
+            try(var conn = DriverManager.getConnection(url);
+                var pstmt = conn.prepareStatement(sql)) {
+                pstmt.setString(1, ans.toUpperCase());
+                pstmt.executeUpdate();
+
+            }
+            System.out.println("Stocklist after removing: " + stockList + "\n");
+
+        }
+        else if (stockList.removeIf(n -> n.stock.equals(ans))){
+            try(var conn = DriverManager.getConnection(url);
+                var pstmt = conn.prepareStatement(sql2)) {
+                pstmt.setString(1, ans);
+                pstmt.executeUpdate();
+
+            }
+            System.out.println("Stocklist after removing: " + stockList + "\n");
         };
     }
 
@@ -166,7 +200,107 @@ public class Command {
             }
         }
     }
+    /*
+    Overloaded update stock method, updates stock arrayList and Sqlit3 values using JTextield values.
+     */
+    public static void updateStock(String ticker, int update, double price){
+        // Database Update
+        String sql1 = "UPDATE GrowfDMS SET [Current Price] = ? WHERE Ticker = ?";
+        String sql2 = "UPDATE GrowfDMS SET [Purchase Price] = ? WHERE Ticker = ?";
+        String sql3 = "UPDATE GrowfDMS SET [Number Purchased] = ? WHERE Ticker = ?";
+        String url = "jdbc:sqlite:src/GrowfDMS.db";
+        // create a connection to the database
 
+        for (Stock stock : stockList) {
+            if (stock.ticker.equals(ticker.toUpperCase())) {
+                switch (update) {
+                    case 1:
+                        System.out.println("Current price is currently: " + stock.getCurrentPrice());
+
+                        do {try {
+                            stock.setCurrentPrice(price);
+                            try(var conn = DriverManager.getConnection(url);
+                                var pstmt = conn.prepareStatement(sql1)) {
+                                pstmt.setDouble(1, price);
+                                pstmt.setString(2, ticker);
+                                pstmt.executeUpdate();
+
+                            } catch (SQLException e) {
+                                System.err.println(e.getMessage());
+                            }
+                            break;
+                        }
+                        catch (Exception e) {
+                            System.out.println("Invalid input, please enter a numeric value for current stock price.");
+                            JOptionPane.showMessageDialog(null,"Invalid input, please enter a numeric value for current stock price.");
+                        }
+                        }
+                        while(true);
+                        System.out.println("Current updated to: " + stock.getCurrentPrice());
+                        update = 4;
+                        break;
+
+                    case 2:
+                        System.out.println("Purchase price is currently: " + stock.getPurchasePrice());
+
+                        do {try {
+                            stock.setPurchasePrice(price);
+                            try(var conn = DriverManager.getConnection(url);
+                                var pstmt = conn.prepareStatement(sql2)) {
+                                pstmt.setDouble(1, price);
+                                pstmt.setString(2, ticker);
+                                pstmt.executeUpdate();
+
+                            } catch (SQLException e) {
+                                System.err.println(e.getMessage());
+                            }
+                            break;
+                        }
+                        catch (Exception e) {
+                            System.out.println("Invalid input, please enter a numeric value for current stock price.");
+                            JOptionPane.showMessageDialog(null,"Invalid input, please enter a numeric value for current stock price.");
+                        }
+                        }
+                        while(true);
+                        System.out.println("Purchase price updated to: " + stock.getPurchasePrice());
+
+                        update = 4;
+                        break;
+
+                    case 3:
+                        System.out.println("Number purchased is currently: " + stock.getNumbPurchased());
+                        do {try {
+                            stock.setNumbPurchased(price);
+                            try(var conn = DriverManager.getConnection(url);
+                                var pstmt = conn.prepareStatement(sql3)) {
+                                pstmt.setDouble(1, price);
+                                pstmt.setString(2, ticker);
+                                pstmt.executeUpdate();
+
+                            } catch (SQLException e) {
+                                System.err.println(e.getMessage());
+                            }
+                            break;
+                        }
+                        catch (Exception e) {
+                            System.out.println("Invalid input, please enter a numeric value for current stock price.");
+                            JOptionPane.showMessageDialog(null,"Invalid input, please enter a numeric value for current stock price.");
+                        }
+                        }
+                        while(true);
+                        System.out.println("Number purchased updated to: " + stock.getNumbPurchased());
+
+                        update = 4;
+                        break;
+
+                    case 4:
+                        System.out.println("Returning to main menu.\n");
+                        Main.printMenu();
+                        break;
+                }
+            }
+        }
+    }
     /*
     This method reads data from a text file and sorts it into an arrayList of stock objects.
     It has no arguments or return value.
@@ -199,12 +333,56 @@ public class Command {
                 dividend = Float.valueOf(sc.next());
                 System.out.println(dividend + "\n");
 
-                stockList.add(new Stock(stock, ticker, description, currentPrice, numbPurchased, purchasePrice, dividend));
+                stockList.add(new Stock(stock, ticker, description, currentPrice, numbPurchased, purchasePrice, priceChange, dividend));
             }
         }
         else {
             System.out.println("File not found, please verify your directory.\n");
+            JOptionPane.showMessageDialog(null,"File not found, please verify your directory.");
             System.exit(0);
+        }
+    }
+    // New importData for handling SQLit3
+    public static void importDataDB() {
+        Connection conn = null;
+        String query = "select * from GrowfDMS";
+        String stock, ticker, description;
+        double currentPrice, numbPurchased, purchasePrice, priceChange;
+        float dividend;
+        try {
+            // db parameters
+            String url = "jdbc:sqlite:src/GrowfDMS.db";
+            // create a connection to the database
+            conn = DriverManager.getConnection(url);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+
+            System.out.println("Connection to SQLite has been established.");
+
+            while (rs.next()) {
+                ticker = rs.getString(1);
+                stock = rs.getString(2);
+                description = rs.getString(3);
+                currentPrice = rs.getDouble(4);
+                numbPurchased = rs.getDouble(5);
+                purchasePrice = rs.getDouble(6);
+                priceChange = rs.getDouble(7);
+                dividend = rs.getFloat(8);
+
+                System.out.println(rs.getString(1) + "\t" + rs.getString(2) + "\t" + rs.getString(3));
+                Command.stockList.add(new Stock(stock, ticker, description, currentPrice, numbPurchased, purchasePrice, priceChange, dividend));
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException ex) {
+                System.out.println(ex.getMessage());
+            }
         }
     }
 
@@ -217,6 +395,7 @@ public class Command {
         String stock, ticker, description;
         double currentPrice, numbPurchased, purchasePrice, priceChange;
         float dividend;
+
 
         Scanner addStockScanner = new Scanner(System.in);
 
@@ -282,7 +461,41 @@ public class Command {
         System.out.println(priceChange);
         System.out.println(dividend + "\n");
 
-        stockList.add(new Stock(stock, ticker, description, currentPrice, numbPurchased, purchasePrice, dividend));
+        stockList.add(new Stock(stock, ticker, description, currentPrice, numbPurchased, purchasePrice, priceChange, dividend));
+        System.out.println("Updated stockList: " + stockList);
+    }
+
+    /*
+    Overloaded version of addStock method, allows adding of objects to the arrayList from
+    Jtextfields in GUI.
+     */
+    static void addStock(String stock,String ticker,String description,double currentPrice,double numbPurchased,double purchasePrice, double priceChange, float dividend) throws SQLException {
+        priceChange = currentPrice - purchasePrice;
+        // StockList Update
+        stockList.add(new Stock(stock, ticker, description, currentPrice, numbPurchased, purchasePrice, priceChange, dividend));
+
+        // Database Update
+        String sql = "INSERT INTO GrowfDMS (Ticker,Stock,Description,[Current Price],[Number Purchased],[Purchase Price],[Price Change],Dividend) VALUES (?,?,?,?,?,?,?,?)";
+        String url = "jdbc:sqlite:src/GrowfDMS.db";
+        // create a connection to the database
+
+
+        try(var conn = DriverManager.getConnection(url);
+            var pstmt = conn.prepareStatement(sql)) {
+                pstmt.setString(1, ticker);
+                pstmt.setString(2, stock);
+                pstmt.setString(3, description);
+                pstmt.setDouble(4, currentPrice);
+                pstmt.setDouble(5, numbPurchased);
+                pstmt.setDouble(6, purchasePrice);
+                pstmt.setDouble(7, priceChange);
+                pstmt.setFloat(8, dividend);
+                pstmt.executeUpdate();
+
+        }
+
+
+        //Logging
         System.out.println("Updated stockList: " + stockList);
     }
 

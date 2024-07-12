@@ -13,7 +13,7 @@ public class Stock {
     double currentPrice;
     double numbPurchased;
     double purchasePrice;
-    double priceChange = currentPrice-purchasePrice;
+    double priceChange;
     Float dividend;
 
 
@@ -80,7 +80,7 @@ public class Stock {
         return this.getStock() + " (" + this.getTicker() + ")";
     }
 
-    public Stock(String stock, String ticker, String description, double currentPrice, double numbPurchased, double purchasePrice, Float dividend) {
+    public Stock(String stock, String ticker, String description, double currentPrice, double numbPurchased, double purchasePrice, double priceChange, Float dividend) {
         this.stock = stock;
         this.ticker = ticker;
         this.description = description;
