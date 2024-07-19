@@ -7,8 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 class CommandTest {
-    /*
-    Utilizes same logic as Command's addStock method without user input to verify.
+
+    /**
+     * Utilizes same logic as Command's addStock method without user input to verify.
      */
     @Test
     void addStock() {
@@ -20,8 +21,10 @@ class CommandTest {
         Command.stockList.add(new Stock(stock, ticker, description, currentPrice, numbPurchased, purchasePrice, priceChange, dividend));
         assertEquals("Test", Command.stockList.getLast().getStock());
     }
-    /*
-    Checks first member of arrayList value to ensure it has been re-arranged.
+
+    /**
+     * Checks first member of arrayList value to ensure it has been re-arranged.
+     * @throws FileNotFoundException if importData does not find text file.
      */
     @Test
     void sortAlpha() throws FileNotFoundException {
@@ -30,8 +33,10 @@ class CommandTest {
         Command.sortAlpha();
             assertEquals("AT&T Inc.", Command.stockList.getFirst().stock);
     }
-    /*
-    Utilizes same logic as our removeStock without userinput, tests stock is indeed removed or fails.
+
+    /**
+     * Utilizes same logic as our removeStock without userinput, tests stock is indeed removed or fails.
+     * @throws FileNotFoundException if text file not found.
      */
     @Test
     void removeStock() throws FileNotFoundException {
@@ -44,8 +49,9 @@ class CommandTest {
         Command.listStocks();
     }
 
-    /*
-    Utilizes same logic as updateStock without user input, tests current price against the one updated here.
+    /**
+     * Utilizes same logic as updateStock without user input, tests current price against the one updated here.
+     * @throws FileNotFoundException if text file not found.
      */
     @Test
     void updateStock() throws FileNotFoundException {
