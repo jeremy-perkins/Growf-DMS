@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CommandTest" time="5.086" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.class.path" value="C:\Users\Jeremy\IdeaProjects\Growf DMS\target\test-classes;C:\Users\Jeremy\IdeaProjects\Growf DMS\target\classes;C:\Users\Jeremy\.m2\repository\com\intellij\forms_rt\7.0.3\forms_rt-7.0.3.jar;C:\Users\Jeremy\.m2\repository\asm\asm-commons\3.0\asm-commons-3.0.jar;C:\Users\Jeremy\.m2\repository\asm\asm-tree\3.0\asm-tree-3.0.jar;C:\Users\Jeremy\.m2\repository\asm\asm\3.0\asm-3.0.jar;C:\Users\Jeremy\.m2\repository\com\jgoodies\forms\1.1-preview\forms-1.1-preview.jar;C:\Users\Jeremy\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar;C:\Users\Jeremy\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0-M2\junit-jupiter-api-5.11.0-M2.jar;C:\Users\Jeremy\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Jeremy\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0-M2\junit-platform-commons-1.11.0-M2.jar;C:\Users\Jeremy\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Jeremy\.m2\repository\org\slf4j\slf4j-simple\2.0.0-alpha0\slf4j-simple-2.0.0-alpha0.jar;C:\Users\Jeremy\.m2\repository\org\xerial\sqlite-jdbc\3.46.0.0\sqlite-jdbc-3.46.0.0.jar;C:\Users\Jeremy\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\Jeremy\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Jeremy\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\Jeremy\AppData\Local\Temp\surefire18084005410697448389\surefirebooter-20240714235330866_3.jar C:\Users\Jeremy\AppData\Local\Temp\surefire18084005410697448389 2024-07-14T23-53-30_682-jvmRun1 surefire-20240714235330866_1tmp surefire_0-20240714235330866_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Jeremy\IdeaProjects\Growf DMS\target\test-classes;C:\Users\Jeremy\IdeaProjects\Growf DMS\target\classes;C:\Users\Jeremy\.m2\repository\com\intellij\forms_rt\7.0.3\forms_rt-7.0.3.jar;C:\Users\Jeremy\.m2\repository\asm\asm-commons\3.0\asm-commons-3.0.jar;C:\Users\Jeremy\.m2\repository\asm\asm-tree\3.0\asm-tree-3.0.jar;C:\Users\Jeremy\.m2\repository\asm\asm\3.0\asm-3.0.jar;C:\Users\Jeremy\.m2\repository\com\jgoodies\forms\1.1-preview\forms-1.1-preview.jar;C:\Users\Jeremy\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar;C:\Users\Jeremy\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0-M2\junit-jupiter-api-5.11.0-M2.jar;C:\Users\Jeremy\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Jeremy\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0-M2\junit-platform-commons-1.11.0-M2.jar;C:\Users\Jeremy\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Jeremy\.m2\repository\org\slf4j\slf4j-simple\2.0.0-alpha0\slf4j-simple-2.0.0-alpha0.jar;C:\Users\Jeremy\.m2\repository\org\xerial\sqlite-jdbc\3.46.0.0\sqlite-jdbc-3.46.0.0.jar;C:\Users\Jeremy\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\Jeremy\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Jeremy\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Jeremy"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Jeremy\IdeaProjects\Growf DMS"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Jeremy\AppData\Local\Temp\surefire18084005410697448389\surefirebooter-20240714235330866_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="Jeremy"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Jeremy\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Jeremy\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.1.3"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="C:\Users\Jeremy\IdeaProjects\Growf DMS"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Users\Jeremy\Downloads\PHP\php-8.1.13-nts-Win32-vs16-x64;C:\Ruby26-x64\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Java\jdk1.8.0_102\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Jeremy\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Jeremy\AppData\Local\Programs\Python\Python311\;C:\Users\Jeremy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310;C:\Users\Jeremy\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Jeremy\AppData\Local\Programs\Python\Python38-32\;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Users\Jeremy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jeremy\AppData\Local\GitHubDesktop\bin;C:\Python.38;C:Python38\Scripts;C:\Users\Jeremy\AppData\Roaming\npm;C:\Users\Jeremy\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\Jeremy\Downloads\PHP\php-8.1.13-nts-Win32-vs16-x64;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="addStock" classname="CommandTest" time="4.984">
+    <system-out><![CDATA[addStock
+]]></system-out>
+    <system-err><![CDATA[Exception "java.lang.ClassNotFoundException: com/intellij/codeInsight/editorActions/FoldingData"while constructing DataFlavor for: application/x-java-jvm-local-objectref; class=com.intellij.codeInsight.editorActions.FoldingData
+Exception "java.lang.ClassNotFoundException: com/intellij/codeInsight/editorActions/FoldingData"while constructing DataFlavor for: application/x-java-jvm-local-objectref; class=com.intellij.codeInsight.editorActions.FoldingData
+Exception "java.lang.ClassNotFoundException: com/intellij/openapi/editor/impl/EditorCopyPasteHelperImpl$CopyPasteOptionsTransferableData"while constructing DataFlavor for: application/x-java-serialized-object; class=com.intellij.openapi.editor.impl.EditorCopyPasteHelperImpl$CopyPasteOptionsTransferableData
+Exception "java.lang.ClassNotFoundException: com/intellij/openapi/editor/impl/EditorCopyPasteHelperImpl$CopyPasteOptionsTransferableData"while constructing DataFlavor for: application/x-java-serialized-object; class=com.intellij.openapi.editor.impl.EditorCopyPasteHelperImpl$CopyPasteOptionsTransferableData
+]]></system-err>
+  </testcase>
+  <testcase name="updateStock" classname="CommandTest" time="0.029">
+    <system-out><![CDATA[Added Stock Oracle Corporation with values:
+ORCL
+Oracle Corporation offers products and services that address enterprise information technology environments worldwide. Its Oracle cloud software as a service offering include various cloud software applications, including Oracle Fusion cloud enterprise resource planning (ERP), Oracle Fusion cloud enterprise performance management, Oracle Fusion cloud supply chain and manufacturing management, Oracle Fusion cloud human capital management, Oracle Cerner healthcare, and NetSuite applications suite, as well as Oracle Fusion Sales, Service, and Marketing. 
+139.46
+2.0
+135.0
+4.460000000000008
+0.04
+
+Added Stock Microsoft Corporation with values:
+MSFT
+Microsoft Corporation develops and supports software, services, devices and solutions worldwide. The Productivity and Business Processes segment offers office, exchange, SharePoint, Microsoft Teams, office 365 Security and Compliance, Microsoft viva, and Microsoft 365 copilot, and office consumer services, such as Microsoft 365 consumer subscriptions, Office licensed on-premises, and other office services. This segment also provides LinkedIn, and dynamics business solutions, including Dynamics 365, a set of intelligent, cloud-based applications across ERP, CRM, power apps, and power automate, and on-premises ERP and CRM applications. 
+438.83
+0.67
+400.59
+38.24000000000001
+0.001
+
+Added Stock Canadian West Bank with values:
+CWB
+Canadian Western Bank provides personal and business banking products and services in Western Canada. The company offers current, savings, US dollar, chequing, flex notice, organization, business trust, and trust fund investment accounts. It also offers commercial lending and real estate, equipment financing and leasing, aviation financing, and dealership financing products, agriculture lending products and AgriInvest savings account, variable and fixed rate mortgages, line of credit, registered retirement savings plan, consolidation, and vehicle loans, and credit cards.
+42.26
+12.0
+40.06
+2.1999999999999957
+0.03
+
+Added Stock NVIDIA Corporation with values:
+NVDA
+NVIDIA Corporation provides graphics and compute and networking solutions in the United States, Taiwan, China, Hong Kong, and internationally. The Graphics segment offers GeForce GPUs for gaming and PCs, the GeForce NOW game streaming service and related infrastructure, and solutions for gaming platforms, Quadro/NVIDIA RTX GPUs for enterprise workstation graphics, virtual GPU or vGPU software for cloud-based visual and virtual computing, automotive platforms for infotainment systems, and Omniverse software for building and operating metaverse and 3D internet applications.
+125.65
+1.0
+65.32
+60.33000000000001
+0.0
+
+Added Stock Apple Inc. with values:
+AAPL
+Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones, Mac, a line of personal computers, iPad, a line of multi-purpose tablets, and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, and HomePod. It also provides AppleCare support and cloud services, and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. 
+219.71
+3.76
+205.32
+14.390000000000015
+0.0023
+
+Added Stock GameStop Corp. with values:
+GME
+GameStop Corp., a specialty retailer, provides games and entertainment products through its stores and ecommerce platforms in the United States, Canada, Australia, and Europe. The company sells new and pre-owned gaming platforms, accessories, such as controllers, gaming headsets, and virtual reality products, new and pre-owned gaming software, and in-game digital currency, digital downloadable content, and full-game downloads. It sells collectibles comprising apparel, toys, trading cards, gadgets, and other retail products for pop culture and technology enthusiasts, as well as engages in the digital asset wallet and NFT marketplace activities. 
+28.14
+23.12
+12.64
+15.5
+0.0
+
+Added Stock Tesla, Inc. with values:
+TSLA
+Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive, and Energy Generation and Storage. The Automotive segment offers electric vehicles, as well as sells automotive regulatory credits, and non-warranty after-sales vehicle, used vehicles, body shop and parts, supercharging, retail merchandise, and vehicle insurance services.
+179.6
+2.0
+165.14
+14.460000000000008
+0.004
+
+Added Stock SoFI Technologies, Inc. with values:
+SOFI
+SoFi Technologies, Inc. provides various financial services in the United States, Latin America, and Canada. It operates through three segments: Lending, Technology Platform, and Financial Services. The company offers lending and financial services and products that allows its members to borrow, save, spend, invest, and protect money. It offers personal loans, student loans, home loans, and related services.
+7.16
+16.0
+7.87
+-0.71
+0.06
+
+Added Stock Ford Motor Company with values:
+F
+Ford Motor Company develops, delivers, and services a range of Ford trucks, commercial cars and vans, sport utility vehicles, and Lincoln luxury vehicles worldwide. It operates through Ford Blue, Ford Model e, and Ford Pro, Ford Next, and Ford Credit segments. The company sells Ford and Lincoln vehicles, service parts, and accessories through distributors and dealers, as well as through dealerships to commercial fleet customers, daily rental car companies, and governments. It also engages in vehicle-related financing and leasing activities to and through automotive dealers.
+12.09
+25.0
+12.0
+0.08999999999999986
+0.035
+
+Added Stock Sirius XM Holdings Inc. with values:
+SIRI
+Sirius XM Holdings Inc. operates as an audio entertainment company in North America. It operates in two segments, Sirius XM, and Pandora and Off-platform. The company's Sirius XM segment provides music, sports, entertainment, comedy, talk, news, traffic and weather channels, and other content, as well as podcast and infotainment services on subscription fee basis, and live, curated, and exclusive and on demand programming services through satellite radio systems and streamed through applications for mobile and home devices, and other consumer electronic equipment.
+2.6
+50.0
+2.55
+0.050000000000000266
+0.0
+
+Added Stock American Airlines Group Inc. with values:
+AAL
+American Airlines Group Inc., through its subsidiaries, operates as a network air carrier. The company provides scheduled air transportation services for passengers and cargo through its hubs in Charlotte, Chicago, Dallas/Fort Worth, Los Angeles, Miami, New York, Philadelphia, Phoenix, and Washington, D.C., as well as through partner gateways in London, Doha, Madrid, Seattle/Tacoma, Sydney, and Tokyo. It operates a mainline fleet of 965 aircraft.
+11.58
+10.0
+11.26
+0.3200000000000003
+0.005
+
+Added Stock Palantir Technologies Inc. with values:
+PLTR
+Palantir Technologies Inc. builds and deploys software platforms for the intelligence community to assist in counterterrorism investigations and operations in the United States, the United Kingdom, and internationally. The company provides Palantir Gotham, a software platform which enables users to identify patterns hidden deep within datasets, ranging from signals intelligence sources to reports from confidential informants, as well as facilitates the handoff between analysts and operational users, helping operators plan and execute real-world responses to threats that have been identified within the platform.
+23.76
+4.0
+23.0
+0.7600000000000016
+0.05
+
+Added Stock Intel Corporation with values:
+INTC
+Intel Corporation designs, develops, manufactures, markets, and sells computing and related products and services worldwide. It operates through Client Computing Group, Data Center and AI, Network and Edge, Mobileye, and Intel Foundry Services segments. The company's products portfolio comprises central processing units and chipsets, system-on-chips (SoCs), and multichip packages, mobile and desktop processors, hardware products comprising graphics processing units (GPUs), domain-specific accelerators, and field programmable gate arrays (FPGAs), and memory and storage, connectivity and networking, and other semiconductor products.
+30.51
+26.4
+28.95
+1.5600000000000023
+0.03
+
+Added Stock Rivian Automotive, Inc. with values:
+RIVN
+Rivian Automotive, Inc., together with its subsidiaries, designs, develops, manufactures, and sells electric vehicles and accessories. The company offers consumer vehicles, including a two-row, five-passenger pickup truck under the R1T brand, a three-row, seven-passenger sport utility vehicle under the R1S name. It provides consumer services, such as digital financing and leasing, telematics-based insurance, vehicle maintenance and repair services, software services, and charging solutions.
+11.95
+1.0
+10.5
+1.4499999999999993
+0.02
+
+Added Stock Plug Power Inc. with values:
+PLUG
+Plug Power Inc. develops hydrogen and fuel cell product solutions in North America, Europe, Asia, and internationally. The company offers GenDrive, a hydrogen-fueled proton exchange membrane (PEM) fuel cell system that provides power to material handling electric vehicles, GenSure, a stationary fuel cell solution that offers modular PEM fuel cell power to support the backup and grid-support power requirements of the telecommunications, transportation, and utility sectors, ProGen, a fuel cell stack and engine technology used in mobility and stationary fuel cell systems, and as engines in electric delivery vans
+2.93
+5.0
+2.75
+0.18000000000000016
+0.0025
+
+Added Stock Bank of America Corporation with values:
+BAC
+Bank of America Corporation, through its subsidiaries, provides banking and financial products and services for individual consumers, small and middle-market businesses, institutional investors, large corporations, and governments worldwide. It operates in four segments: Consumer Banking, Global Wealth & Investment Management (GWIM), Global Banking, and Global Markets.
+39.45
+5.26
+42.6
+-3.1499999999999986
+0.001
+
+Added Stock AT&T Inc. with values:
+T
+AT&T Inc. provides telecommunications and technology services worldwide. The company operates through two segments, Communications and Latin America. The Communications segment offers wireless voice and data communications services, and sells handsets, wireless data cards, wireless computing devices, carrying cases/protective covers, and wireless chargers through its own company-owned stores, agents, and third-party retail stores.
+17.59
+20.0
+18.5
+-0.9100000000000001
+0.05
+
+Added Stock Amazon.com, Inc. with values:
+AMZN
+Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, Fire tablets, Fire TVs, Echo, Ring, Blink, and eero, and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores, and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content.
+187.39
+5.0
+186.4
+0.9899999999999807
+0.02
+
+Added Stock Pfizer Inc. with values:
+PFE
+Pfizer Inc. discovers, develops, manufactures, markets, distributes, and sells biopharmaceutical products in the United States, Europe, and internationally. The company offers medicines and vaccines in various therapeutic areas, including cardiovascular metabolic, migraine, and women's health under the Eliquis, Nurtec ODT/Vydura, Zavzpret, and the Premarin family brands, infectious diseases with unmet medical needs under the Prevnar family, Abrysvo, Nimenrix, FSME/IMMUN-TicoVac, and Trumenba brands, and COVID-19 prevention and treatment, and potential future mRNA and antiviral products under the Comirnaty and Paxlovid brands.
+27.66
+5.0
+25.42
+2.2399999999999984
+0.002
+
+Added Stock Robinhood Markets,Inc. with values:
+HOOD
+Robinhood Markets, Inc. operates financial services platform in the United States. Its platform allows users to invest in stocks, exchange-traded funds (ETFs), American depository receipts, options, gold, and cryptocurrencies. The company offers fractional trading, recurring investments, fully-paid securities lending, access to investing on margin, cash sweep, instant withdrawals, retirement program, around-the-clock trading, and initial public offerings participation services. It also provides various learning and education solutions comprise Snacks, an accessible digest of business news stories for a new generation of investors.
+24.2
+3.0
+24.8
+-0.6000000000000014
+0.0
+
+updateStock
+Stock: [Test] found.
+
+Current price is currently: 1.1
+]]></system-out>
+  </testcase>
+  <testcase name="removeStock" classname="CommandTest" time="0.015">
+    <system-out><![CDATA[removeStock
+Stocklist after removing: [Test (TST), Oracle Corporation (ORCL), Microsoft Corporation (MSFT), Canadian West Bank (CWB), NVIDIA Corporation (NVDA), Apple Inc. (AAPL), GameStop Corp. (GME), Tesla, Inc. (TSLA), SoFI Technologies, Inc. (SOFI), Ford Motor Company (F), Sirius XM Holdings Inc. (SIRI), American Airlines Group Inc. (AAL), Palantir Technologies Inc. (PLTR), Intel Corporation (INTC), Rivian Automotive, Inc. (RIVN), Plug Power Inc. (PLUG), Bank of America Corporation (BAC), Amazon.com, Inc. (AMZN), Pfizer Inc. (PFE), Robinhood Markets,Inc. (HOOD)]
+
+Current stockList: [Test (TST), Oracle Corporation (ORCL), Microsoft Corporation (MSFT), Canadian West Bank (CWB), NVIDIA Corporation (NVDA), Apple Inc. (AAPL), GameStop Corp. (GME), Tesla, Inc. (TSLA), SoFI Technologies, Inc. (SOFI), Ford Motor Company (F), Sirius XM Holdings Inc. (SIRI), American Airlines Group Inc. (AAL), Palantir Technologies Inc. (PLTR), Intel Corporation (INTC), Rivian Automotive, Inc. (RIVN), Plug Power Inc. (PLUG), Bank of America Corporation (BAC), Amazon.com, Inc. (AMZN), Pfizer Inc. (PFE), Robinhood Markets,Inc. (HOOD)]
+]]></system-out>
+  </testcase>
+  <testcase name="sortAlpha" classname="CommandTest" time="0.02">
+    <system-out><![CDATA[sortAlpha
+Added Stock Oracle Corporation with values:
+ORCL
+Oracle Corporation offers products and services that address enterprise information technology environments worldwide. Its Oracle cloud software as a service offering include various cloud software applications, including Oracle Fusion cloud enterprise resource planning (ERP), Oracle Fusion cloud enterprise performance management, Oracle Fusion cloud supply chain and manufacturing management, Oracle Fusion cloud human capital management, Oracle Cerner healthcare, and NetSuite applications suite, as well as Oracle Fusion Sales, Service, and Marketing. 
+139.46
+2.0
+135.0
+4.460000000000008
+0.04
+
+Added Stock Microsoft Corporation with values:
+MSFT
+Microsoft Corporation develops and supports software, services, devices and solutions worldwide. The Productivity and Business Processes segment offers office, exchange, SharePoint, Microsoft Teams, office 365 Security and Compliance, Microsoft viva, and Microsoft 365 copilot, and office consumer services, such as Microsoft 365 consumer subscriptions, Office licensed on-premises, and other office services. This segment also provides LinkedIn, and dynamics business solutions, including Dynamics 365, a set of intelligent, cloud-based applications across ERP, CRM, power apps, and power automate, and on-premises ERP and CRM applications. 
+438.83
+0.67
+400.59
+38.24000000000001
+0.001
+
+Added Stock Canadian West Bank with values:
+CWB
+Canadian Western Bank provides personal and business banking products and services in Western Canada. The company offers current, savings, US dollar, chequing, flex notice, organization, business trust, and trust fund investment accounts. It also offers commercial lending and real estate, equipment financing and leasing, aviation financing, and dealership financing products, agriculture lending products and AgriInvest savings account, variable and fixed rate mortgages, line of credit, registered retirement savings plan, consolidation, and vehicle loans, and credit cards.
+42.26
+12.0
+40.06
+2.1999999999999957
+0.03
+
+Added Stock NVIDIA Corporation with values:
+NVDA
+NVIDIA Corporation provides graphics and compute and networking solutions in the United States, Taiwan, China, Hong Kong, and internationally. The Graphics segment offers GeForce GPUs for gaming and PCs, the GeForce NOW game streaming service and related infrastructure, and solutions for gaming platforms, Quadro/NVIDIA RTX GPUs for enterprise workstation graphics, virtual GPU or vGPU software for cloud-based visual and virtual computing, automotive platforms for infotainment systems, and Omniverse software for building and operating metaverse and 3D internet applications.
+125.65
+1.0
+65.32
+60.33000000000001
+0.0
+
+Added Stock Apple Inc. with values:
+AAPL
+Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones, Mac, a line of personal computers, iPad, a line of multi-purpose tablets, and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, and HomePod. It also provides AppleCare support and cloud services, and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. 
+219.71
+3.76
+205.32
+14.390000000000015
+0.0023
+
+Added Stock GameStop Corp. with values:
+GME
+GameStop Corp., a specialty retailer, provides games and entertainment products through its stores and ecommerce platforms in the United States, Canada, Australia, and Europe. The company sells new and pre-owned gaming platforms, accessories, such as controllers, gaming headsets, and virtual reality products, new and pre-owned gaming software, and in-game digital currency, digital downloadable content, and full-game downloads. It sells collectibles comprising apparel, toys, trading cards, gadgets, and other retail products for pop culture and technology enthusiasts, as well as engages in the digital asset wallet and NFT marketplace activities. 
+28.14
+23.12
+12.64
+15.5
+0.0
+
+Added Stock Tesla, Inc. with values:
+TSLA
+Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive, and Energy Generation and Storage. The Automotive segment offers electric vehicles, as well as sells automotive regulatory credits, and non-warranty after-sales vehicle, used vehicles, body shop and parts, supercharging, retail merchandise, and vehicle insurance services.
+179.6
+2.0
+165.14
+14.460000000000008
+0.004
+
+Added Stock SoFI Technologies, Inc. with values:
+SOFI
+SoFi Technologies, Inc. provides various financial services in the United States, Latin America, and Canada. It operates through three segments: Lending, Technology Platform, and Financial Services. The company offers lending and financial services and products that allows its members to borrow, save, spend, invest, and protect money. It offers personal loans, student loans, home loans, and related services.
+7.16
+16.0
+7.87
+-0.71
+0.06
+
+Added Stock Ford Motor Company with values:
+F
+Ford Motor Company develops, delivers, and services a range of Ford trucks, commercial cars and vans, sport utility vehicles, and Lincoln luxury vehicles worldwide. It operates through Ford Blue, Ford Model e, and Ford Pro, Ford Next, and Ford Credit segments. The company sells Ford and Lincoln vehicles, service parts, and accessories through distributors and dealers, as well as through dealerships to commercial fleet customers, daily rental car companies, and governments. It also engages in vehicle-related financing and leasing activities to and through automotive dealers.
+12.09
+25.0
+12.0
+0.08999999999999986
+0.035
+
+Added Stock Sirius XM Holdings Inc. with values:
+SIRI
+Sirius XM Holdings Inc. operates as an audio entertainment company in North America. It operates in two segments, Sirius XM, and Pandora and Off-platform. The company's Sirius XM segment provides music, sports, entertainment, comedy, talk, news, traffic and weather channels, and other content, as well as podcast and infotainment services on subscription fee basis, and live, curated, and exclusive and on demand programming services through satellite radio systems and streamed through applications for mobile and home devices, and other consumer electronic equipment.
+2.6
+50.0
+2.55
+0.050000000000000266
+0.0
+
+Added Stock American Airlines Group Inc. with values:
+AAL
+American Airlines Group Inc., through its subsidiaries, operates as a network air carrier. The company provides scheduled air transportation services for passengers and cargo through its hubs in Charlotte, Chicago, Dallas/Fort Worth, Los Angeles, Miami, New York, Philadelphia, Phoenix, and Washington, D.C., as well as through partner gateways in London, Doha, Madrid, Seattle/Tacoma, Sydney, and Tokyo. It operates a mainline fleet of 965 aircraft.
+11.58
+10.0
+11.26
+0.3200000000000003
+0.005
+
+Added Stock Palantir Technologies Inc. with values:
+PLTR
+Palantir Technologies Inc. builds and deploys software platforms for the intelligence community to assist in counterterrorism investigations and operations in the United States, the United Kingdom, and internationally. The company provides Palantir Gotham, a software platform which enables users to identify patterns hidden deep within datasets, ranging from signals intelligence sources to reports from confidential informants, as well as facilitates the handoff between analysts and operational users, helping operators plan and execute real-world responses to threats that have been identified within the platform.
+23.76
+4.0
+23.0
+0.7600000000000016
+0.05
+
+Added Stock Intel Corporation with values:
+INTC
+Intel Corporation designs, develops, manufactures, markets, and sells computing and related products and services worldwide. It operates through Client Computing Group, Data Center and AI, Network and Edge, Mobileye, and Intel Foundry Services segments. The company's products portfolio comprises central processing units and chipsets, system-on-chips (SoCs), and multichip packages, mobile and desktop processors, hardware products comprising graphics processing units (GPUs), domain-specific accelerators, and field programmable gate arrays (FPGAs), and memory and storage, connectivity and networking, and other semiconductor products.
+30.51
+26.4
+28.95
+1.5600000000000023
+0.03
+
+Added Stock Rivian Automotive, Inc. with values:
+RIVN
+Rivian Automotive, Inc., together with its subsidiaries, designs, develops, manufactures, and sells electric vehicles and accessories. The company offers consumer vehicles, including a two-row, five-passenger pickup truck under the R1T brand, a three-row, seven-passenger sport utility vehicle under the R1S name. It provides consumer services, such as digital financing and leasing, telematics-based insurance, vehicle maintenance and repair services, software services, and charging solutions.
+11.95
+1.0
+10.5
+1.4499999999999993
+0.02
+
+Added Stock Plug Power Inc. with values:
+PLUG
+Plug Power Inc. develops hydrogen and fuel cell product solutions in North America, Europe, Asia, and internationally. The company offers GenDrive, a hydrogen-fueled proton exchange membrane (PEM) fuel cell system that provides power to material handling electric vehicles, GenSure, a stationary fuel cell solution that offers modular PEM fuel cell power to support the backup and grid-support power requirements of the telecommunications, transportation, and utility sectors, ProGen, a fuel cell stack and engine technology used in mobility and stationary fuel cell systems, and as engines in electric delivery vans
+2.93
+5.0
+2.75
+0.18000000000000016
+0.0025
+
+Added Stock Bank of America Corporation with values:
+BAC
+Bank of America Corporation, through its subsidiaries, provides banking and financial products and services for individual consumers, small and middle-market businesses, institutional investors, large corporations, and governments worldwide. It operates in four segments: Consumer Banking, Global Wealth & Investment Management (GWIM), Global Banking, and Global Markets.
+39.45
+5.26
+42.6
+-3.1499999999999986
+0.001
+
+Added Stock AT&T Inc. with values:
+T
+AT&T Inc. provides telecommunications and technology services worldwide. The company operates through two segments, Communications and Latin America. The Communications segment offers wireless voice and data communications services, and sells handsets, wireless data cards, wireless computing devices, carrying cases/protective covers, and wireless chargers through its own company-owned stores, agents, and third-party retail stores.
+17.59
+20.0
+18.5
+-0.9100000000000001
+0.05
+
+Added Stock Amazon.com, Inc. with values:
+AMZN
+Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, Fire tablets, Fire TVs, Echo, Ring, Blink, and eero, and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores, and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content.
+187.39
+5.0
+186.4
+0.9899999999999807
+0.02
+
+Added Stock Pfizer Inc. with values:
+PFE
+Pfizer Inc. discovers, develops, manufactures, markets, distributes, and sells biopharmaceutical products in the United States, Europe, and internationally. The company offers medicines and vaccines in various therapeutic areas, including cardiovascular metabolic, migraine, and women's health under the Eliquis, Nurtec ODT/Vydura, Zavzpret, and the Premarin family brands, infectious diseases with unmet medical needs under the Prevnar family, Abrysvo, Nimenrix, FSME/IMMUN-TicoVac, and Trumenba brands, and COVID-19 prevention and treatment, and potential future mRNA and antiviral products under the Comirnaty and Paxlovid brands.
+27.66
+5.0
+25.42
+2.2399999999999984
+0.002
+
+Added Stock Robinhood Markets,Inc. with values:
+HOOD
+Robinhood Markets, Inc. operates financial services platform in the United States. Its platform allows users to invest in stocks, exchange-traded funds (ETFs), American depository receipts, options, gold, and cryptocurrencies. The company offers fractional trading, recurring investments, fully-paid securities lending, access to investing on margin, cash sweep, instant withdrawals, retirement program, around-the-clock trading, and initial public offerings participation services. It also provides various learning and education solutions comprise Snacks, an accessible digest of business news stories for a new generation of investors.
+24.2
+3.0
+24.8
+-0.6000000000000014
+0.0
+
+Stocklist Prior to sorting: [Test (TST), Oracle Corporation (ORCL), Microsoft Corporation (MSFT), Canadian West Bank (CWB), NVIDIA Corporation (NVDA), Apple Inc. (AAPL), GameStop Corp. (GME), Tesla, Inc. (TSLA), SoFI Technologies, Inc. (SOFI), Ford Motor Company (F), Sirius XM Holdings Inc. (SIRI), American Airlines Group Inc. (AAL), Palantir Technologies Inc. (PLTR), Intel Corporation (INTC), Rivian Automotive, Inc. (RIVN), Plug Power Inc. (PLUG), Bank of America Corporation (BAC), Amazon.com, Inc. (AMZN), Pfizer Inc. (PFE), Robinhood Markets,Inc. (HOOD), Oracle Corporation (ORCL), Microsoft Corporation (MSFT), Canadian West Bank (CWB), NVIDIA Corporation (NVDA), Apple Inc. (AAPL), GameStop Corp. (GME), Tesla, Inc. (TSLA), SoFI Technologies, Inc. (SOFI), Ford Motor Company (F), Sirius XM Holdings Inc. (SIRI), American Airlines Group Inc. (AAL), Palantir Technologies Inc. (PLTR), Intel Corporation (INTC), Rivian Automotive, Inc. (RIVN), Plug Power Inc. (PLUG), Bank of America Corporation (BAC), AT&T Inc. (T), Amazon.com, Inc. (AMZN), Pfizer Inc. (PFE), Robinhood Markets,Inc. (HOOD)]
+Stocklist after sorting (A-Z): [AT&T Inc. (T), Amazon.com, Inc. (AMZN), Amazon.com, Inc. (AMZN), American Airlines Group Inc. (AAL), American Airlines Group Inc. (AAL), Apple Inc. (AAPL), Apple Inc. (AAPL), Bank of America Corporation (BAC), Bank of America Corporation (BAC), Canadian West Bank (CWB), Canadian West Bank (CWB), Ford Motor Company (F), Ford Motor Company (F), GameStop Corp. (GME), GameStop Corp. (GME), Intel Corporation (INTC), Intel Corporation (INTC), Microsoft Corporation (MSFT), Microsoft Corporation (MSFT), NVIDIA Corporation (NVDA), NVIDIA Corporation (NVDA), Oracle Corporation (ORCL), Oracle Corporation (ORCL), Palantir Technologies Inc. (PLTR), Palantir Technologies Inc. (PLTR), Pfizer Inc. (PFE), Pfizer Inc. (PFE), Plug Power Inc. (PLUG), Plug Power Inc. (PLUG), Rivian Automotive, Inc. (RIVN), Rivian Automotive, Inc. (RIVN), Robinhood Markets,Inc. (HOOD), Robinhood Markets,Inc. (HOOD), Sirius XM Holdings Inc. (SIRI), Sirius XM Holdings Inc. (SIRI), SoFI Technologies, Inc. (SOFI), SoFI Technologies, Inc. (SOFI), Tesla, Inc. (TSLA), Tesla, Inc. (TSLA), Test (TST)]
+
+]]></system-out>
+  </testcase>
+</testsuite>
